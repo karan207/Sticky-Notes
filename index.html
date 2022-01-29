@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Drag Drop</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="toggle-bar-button-container" onclick="openScreen()">
+      <i class="fa fa-angle-left fa-3x"></i>
+    </div>
+  </div>
+
+  <div id="toggle-bar-screen">
+
+    <div class="inserting-notes-container">
+      <div class="inserting-notes">
+        <input type="text" id="heading" placeholder="enter heading">
+      </div>
+      <div class="inserting-notes">
+        <textarea id="content" placeholder="enter content"></textarea>    
+      </div>
+      <div class="submit-btn-for-insert-notes">
+        <button type="submit" onclick="pushElement()">stick</button>
+      </div>
+    </div>      
+  </div>
+
+  <!-- bug list -->
+  <!-- if we have to delete inserted element then for first time we have to call the function twice -->
+  <!-- fix the boundary area in which sticky notes can transform -->
+  
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
